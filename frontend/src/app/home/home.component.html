@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #798896;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><img src="../../assets/biz.png"></a>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center; font-weight: bold;font-size: 25px;">ISP Providers<sup>&reg;</sup>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row" style="padding-top: 2%;">
+
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div fxLayout fxLayoutAlign="right right" style="padding-left: 80.5%;">
+                <mat-form-field fxFlex="40%" appearance="fill">
+                    <input matInput type="text" style="border: solid 1px gray;" (keyup)="doFilter($event.target.value)"
+                        placeholder="Filter">
+                </mat-form-field>
+            </div>
+            <br />
+            <mat-table class="student-table mat-elevation-z8" matSort [dataSource]="dataSource">
+
+
+                <ng-container matColumnDef="name">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+                    <mat-cell class="cellHover" *matCellDef="let element">{{element.name}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="rating">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Rating</mat-header-cell>
+                    <mat-cell class="cellHover" *matCellDef="let element">{{element.rating}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="lowestPrice">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Lowest Price</mat-header-cell>
+                    <mat-cell class="cellHover" *matCellDef="let element">{{element.lowestPrice}}</mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+
+                <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onRowClicked(row)"
+                    [ngClass]="{ 'selected': row === selectedRow }">
+                </mat-row>
+
+
+            </mat-table>
+        </div>
+        <div class="col-md-1" style="border-left: 3px solid black;
+        height: 550px;
+        position: absolute;
+        left: 65%;
+        top: 11.5%;"></div>
+        <div class="col-md-3">
+            <div class="col-md-1">
+                <img src="../../assets/images/{{image}}" style="width: 70px; height:70px;">
+            </div>
+            <div class="col-md-2">
+                <div class="detailbox">
+                    <div class="top-header">
+                        {{provider}}
+                    </div>
+                    <div class="d-content">
+                        <span><mat-icon>wifi</mat-icon><b>Max Speed: {{maxSpeed}}</b></span><br/>
+                        <span><mat-icon>call</mat-icon><b> {{contactNo}}</b></span><br/>
+                        <span><mat-icon>email</mat-icon><b> {{email}}</b></span><br/>
+                        <span><mat-icon>attach_money</mat-icon><b>Min Plan: {{minPrice}}/-</b></span><br/><br/>
+                        <span><b>Rating:</b> <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="true"></ngb-rating></span><br/>
+                        <div class="border-box">
+                            {{description}}
+                        </div>
+                    </div>
+
+                    <span style="padding-left: 2%;">
+                        <button class="btn btn-primary" type="submit" value="link">Link</button>&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-primary" type="submit" value="share">Share</button>&nbsp;&nbsp;
+                        <button class="btn btn-primary download" type="submit" value="download">Download</button>
+                    </span>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>

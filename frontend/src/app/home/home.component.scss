@@ -1,0 +1,396 @@
+.navbar-light .navbar-brand{
+    color: white
+}
+
+.detailbox{
+    border-radius: 0.5px;
+    background-color: lightgrey;
+    width: 400px;
+    height: 420px;
+    border: 2px solid #90a5bb;
+    //padding: 50px;
+    margin: 20px;
+}
+.download{
+    padding-left: 10px;
+}
+
+.top-header{
+    padding: 2px;
+    text-align: center;
+    background: #798896;
+    color: white;
+    font-size: 30px;
+}
+
+.d-content{
+    padding: 10px;
+}
+
+.selected {
+    background-color:#90a5bb;
+  }
+
+.border-box{
+    border-radius: 1px;
+    background-color: darkgray;
+    width: 380px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 2px;
+    overflow: scroll;
+    
+}
+
+.ngb-rating {
+    font-size: 100px;
+    color:brown;
+    background: rgba(23, 221, 16, 0.815);
+  }
+
+.utcText {
+	margin-right:10px
+}
+.calTo{
+	margin-right:10px
+}
+.calFrom{
+	margin-right:10px
+}
+.mat-card-header .mat-card-title {
+	font-size: 30px;
+}
+
+.spacer {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+	display: initial;
+}
+
+.mat-card-header .mat-card-subtitle {
+	margin-top: -8px;
+	font-size: 12px;
+}
+
+.mat-card-subtitle {
+	margin-bottom: 0px;
+}
+
+.material-icons {
+	line-height: unset;
+}
+
+mat-cell span a {
+	color: rgba(0, 0, 0, 0.87);
+}
+mat-cell span a:hover {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.header .navbar-light .navbar-nav .nav-link:hover,
+.header .navbar-light .navbar-nav .nav-link:focus {
+	background: rgba(0, 0, 0, 0.1);
+	color: #f6f6f6;
+}
+
+.header .fa.fa-fw.fa-bars {
+	color: #fff;
+}
+
+.table-responsive::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+.cellHover {
+	cursor: pointer;
+}
+
+// mat-header-cell {
+//   padding: 8px 10px;
+// }
+
+.table-header {
+	min-height: 45px;
+	padding: 0px 24px;
+	background-color: #00557d;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// .table-header .search-container {
+//   float: right;
+// }
+
+// #tbhead :first-child  {
+//     margin-right: 60px;}
+
+.stressBar {
+	border-width: 0px 1px 0px 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	height: 60px;
+}
+
+.globalSearch {
+	padding: 5px;
+	font-size: 14px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+.mat-table {
+	width: 100%;
+	background-color: #fff;
+	max-height: 500px;
+	overflow: auto;
+	border: 2px solid #90a5bb;
+}
+
+.mat-focused .placeholder {
+	color: transparent;
+}
+
+mat-footer-row,
+mat-header-row,
+mat-row {
+	align-items: flex-start;
+	//border-left: 10px solid #fff;
+	align-items: stretch; //Added to make cell height equal
+}
+
+mat-header-row,
+mat-header-cell {
+	background: #fff;
+}
+
+mat-row:hover {
+	background-color: #d0ddef;
+}
+
+// .mat-icon-button {
+//   padding-left: 200px;
+// }
+
+.fa-icon-color {
+	color: #009999;
+}
+
+mat-cell,
+mat-footer-cell,
+mat-header-cell {
+	padding: 10px;
+}
+
+mat-cell:first-of-type,
+mat-footer-cell:first-of-type,
+mat-header-cell:first-of-type {
+	padding-left: 13px;
+	border-left: none;
+}
+
+.mat-header-cell {
+	font-size: 14px;
+	border-left: 1px solid rgba(0, 0, 0, 0.12);
+	font-weight: bold;
+	color: inherit;
+}
+@media only screen and (max-width: 400px) {
+	.globalsearch {
+		width: 110px;
+		margin-top: 5px;
+	}
+}
+@media only screen and (max-width: 455px) {
+	.table-header {
+		min-height: 80px;
+	}
+
+	// .table-header .search-container {
+	//   float: none;
+	// }
+
+	// .globalsearch .mat-icon {
+	//   float: right;
+	//   width: 13px;
+	// }
+
+	.toggleTableContentIcon {
+		float: right;
+	}
+}
+
+.mat-cell {
+	// display: block;
+	// overflow: hidden;
+	// text-overflow: ellipsis;
+	// white-space: nowrap;
+
+	border-left: 1px solid rgba(0, 0, 0, 0.12);
+	//  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.toggleTableContentIcon {
+	height: 12px;
+	padding-left: 18px;
+	cursor: pointer;
+}
+
+.iconDimensions {
+	height: 16px;
+	width: 16px;
+}
+
+.ok {
+	color: #239196 !important;
+}
+.alarms {
+	color: #d33d52 !important;
+}
+.warnings {
+	color: #ffba00 !important;
+}
+.grey {
+	color: #2D373C !important;
+}
+
+.alarm-flash {
+	animation-name: on-off;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes on-off {
+	0% {
+		border-left: 10px solid white;
+	}
+	100% {
+		border-left: 10px solid red;
+	}
+}
+
+::ng-deep .mat-form-field-infix {
+	width: 130px !important;
+}
+
+@media only screen and (max-width: 800px) {
+	.mat-table {
+		overflow: scroll;
+	}
+
+	mat-cell,
+	mat-footer-cell,
+	mat-header-cell {
+		flex-basis: 160px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	mat-row,
+	mat-header-row {
+		min-width: 1200px;
+		width: 100%;
+		border-left: 1px solid rgba(0, 0, 0, 0.12);
+		border-right: 1px solid rgba(0, 0, 0, 0.12);
+		border-top: 1px solid rgba(0, 0, 0, 0.12);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+		align-items: stretch; //Added to make cell height equal
+	}
+}
+span.tableDataStyle {
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.tableDataStyleWrap {
+	width: 100%;
+	text-overflow: ellipsis;
+	//white-space: normal;
+	overflow: hidden;
+}
+
+.tableDataStyle {
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.changeColor:hover {
+	color: #007bff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+span.underLineText:hover {
+	text-decoration: underline;
+}
+@media only screen and (max-width: 425px) {
+	mat-row:hover {
+		background-color: #f1f1f1;
+	}
+	.mat-table {
+		margin-top: 10%;
+	}
+	.calFrom{
+		margin-right: -3%;
+		font-size: 13px;
+	}
+	.calTo{
+		margin-right: 0%;
+		padding-left: 4%;
+		font-size: 13px;
+	}
+	.cmp{
+		margin-top: 2.6rem;
+	}
+    :host ::ng-deep .ui-inputtext{
+		width:127px;
+		margin-left: -7px;
+	}
+	.utcText{
+		margin-left: 3px;
+		font-size: 7px;
+	}
+	.applyBtn{
+		margin-top: 5px;
+	}
+	.cancelBtn{
+		margin-top: 5px;
+	}
+}
+
+
+::ng-deep button.mat-sort-header-button {
+ text-align: left !important;
+}
+
+span.positionText{
+	transform: translate(5px, -4px);
+}
+
+a:not(.mat-list-item) {
+	color: #2387aa !important;
+  }
+
+
+.loader-table  {
+	left: 50%;
+	z-index: 10000;
+	position: absolute;
+}
